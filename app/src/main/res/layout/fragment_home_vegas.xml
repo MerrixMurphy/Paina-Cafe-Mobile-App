@@ -1,0 +1,365 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayoutvegas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uivegas.notifications.NotificationsFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="40dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/paina_main_logo_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/paina_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/served_with_vegas"
+                android:layout_width="411dp"
+                android:layout_height="282dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/slogan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paina_main_logo_vegas" />
+
+            <TextView
+                android:id="@+id/aboutustitle_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/about_us_title"
+                android:textColor="#040000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15_vegas" />
+
+            <TextView
+                android:id="@+id/aboutus_vegas"
+                android:layout_width="364dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/about_us"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutustitle_vegas" />
+
+            <TextView
+                android:id="@+id/about_us_2_vegas"
+                android:layout_width="365dp"
+                android:layout_height="152dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#FFFFFF"
+                android:text="@string/about_us_2"
+                android:textColor="#050000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutus_vegas" />
+
+            <ImageButton
+                android:id="@+id/facebook_link_vegas"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_24dp"
+                android:onClick="openfacebooklinkvegas"
+                android:src="@drawable/facebook"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_us_2_vegas" />
+
+            <ImageButton
+                android:id="@+id/instagram_link_vegas"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_24dp"
+                android:onClick="openinstagramlinkvegas"
+                android:src="@drawable/insta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yelp_link_vegas" />
+
+            <ImageButton
+                android:id="@+id/yelp_link_vegas"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_24dp"
+                android:onClick="openyelplinkvegas"
+                android:src="@drawable/yelp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/facebook_link_vegas" />
+
+            <ImageView
+                android:id="@+id/painacafe_fish_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/image_asset"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/instagram_link_vegas" />
+
+            <ImageView
+                android:id="@+id/poke_bowl_vegas"
+                android:layout_width="455dp"
+                android:layout_height="349dp"
+                android:src="@drawable/poke"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/served_with_vegas" />
+
+            <TextView
+                android:id="@+id/poke_bowl_heading_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:gravity="center"
+                android:text="@string/poke"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poke_bowl_vegas" />
+
+            <TextView
+                android:id="@+id/poke_bowl_info_1_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/poke_notes_1"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poke_bowl_heading_vegas" />
+
+            <TextView
+                android:id="@+id/poke_bowl_info_2_vegas"
+                android:layout_width="53dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/poke_notes_2"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/poke_bowl_info_3_vegas"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poke_bowl_info_1_vegas" />
+
+            <TextView
+                android:id="@+id/poke_bowl_info_3_vegas"
+                android:layout_width="356dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/poke_notes_3"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poke_bowl_info_1_vegas" />
+
+            <TextView
+                android:id="@+id/toppings_1_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/toppings_1"
+                android:textColor="#050101"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poke_bowl_info_2_vegas" />
+
+            <TextView
+                android:id="@+id/toppings_2_vegas"
+                android:layout_width="314dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/toppings_2"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poke_bowl_info_3_vegas" />
+
+            <ImageView
+                android:id="@+id/plates_image_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/plates"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toppings_2_vegas" />
+
+            <TextView
+                android:id="@+id/plates_1_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:text="@string/plates_1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plates_image_vegas" />
+
+            <TextView
+                android:id="@+id/plates_2_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/plates_2"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plates_1_vegas" />
+
+            <ImageView
+                android:id="@+id/sandwiches_image_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/sandwiches"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plates_2_vegas" />
+
+            <TextView
+                android:id="@+id/sandwiches_1_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:text="@string/sandwiches_1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sandwiches_image_vegas" />
+
+            <TextView
+                android:id="@+id/sandwiches_2_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/sandwiches_2"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sandwiches_1_vegas" />
+
+            <ImageView
+                android:id="@+id/salads_image_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/salads"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sandwiches_2_vegas" />
+
+            <TextView
+                android:id="@+id/salads_1_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:text="@string/salads_1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salads_image_vegas" />
+
+            <TextView
+                android:id="@+id/salads_2_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/salads_2"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salads_1_vegas" />
+
+            <ImageView
+                android:id="@+id/imageView15_vegas"
+                android:layout_width="483dp"
+                android:layout_height="191dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/sandwichish"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salads_2_vegas" />
+
+            <TextView
+                android:id="@+id/vo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/paina_main_logo_vegas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/paina_main_logo_vegas" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/backs"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="70dp"
+            android:onClick="back"
+            android:rotation="180"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.008"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

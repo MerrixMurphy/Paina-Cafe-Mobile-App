@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/vegasfirst"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/logovegaslogin"
+                android:layout_width="267dp"
+                android:layout_height="291dp"
+                android:layout_gravity="center"
+                android:src="@drawable/paina_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vegaslin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:visibility="visible">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/vegasemailinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:met_baseColor="@color/myTextColor"
+            app:met_iconPadding="0dp"
+            app:met_primaryColor="@color/myTextColor"
+            app:met_textColorHint="@color/myTextColor"
+            tools:visibility="visible" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/vegaspasswordinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:met_baseColor="@color/myTextColor"
+            app:met_iconPadding="0dp"
+            app:met_primaryColor="@color/myTextColor"
+            app:met_textColorHint="@color/myTextColor"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vegasbuttonregister"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#431F63"
+        android:onClick="btn_login_vegas"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/vegasthird"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/checkbox_vegas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Remember Me?"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vegasregisters"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:onClick="txt_create_account_vegas"
+        android:text="Don't have an account? Register here!"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/vegasbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/vegaspass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="invisible" />
+
+
+</LinearLayout>
